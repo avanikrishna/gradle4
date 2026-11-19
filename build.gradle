@@ -1,0 +1,9 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+        tasks.register ('copyWebsite',Copy){
+            from 'src/main/resources'
+            into 'docs'
+        }
